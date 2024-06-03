@@ -1,0 +1,1 @@
+open("words_alpha_three.txt", "w").write("".join(list(filter(lambda s: len(s.strip()) >= 3, open("words_alpha.txt").readlines()))))
