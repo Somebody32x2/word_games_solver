@@ -1,1 +1,1 @@
-open("words_alpha_three.txt", "w").write("".join(list(filter(lambda s: len(s.strip()) >= 3, open("words_alpha.txt").readlines()))))
+open("words_alpha_three.txt", "w").write("".join(list(filter(lambda s: len(s.strip()) >= 3 and all([char in "abcdefghijklmnopqrstuvwxyz" for char in s.strip()]), open("wordlist.txt").readlines()))))
